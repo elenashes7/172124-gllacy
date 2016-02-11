@@ -1,0 +1,28 @@
+.main-navigation{
+	font-family: "Roboto Bold" sans-serif;
+	font-size:16px;
+	line-height:normal;
+	color:#000000;
+	font-weight:bold;
+}
+.container-title{
+	font-family: "Roboto Bold" sans-serif;
+	font-size:35px;
+	line-height:normal;
+	color:#000000;
+	font-weight:bold;
+}
+.text-1{
+	font-family: "Roboto Black" sans-serif;
+	font-size:60px;
+	line-height:normal;
+	color:#000000;
+	font-weight:black;
+}
+.text-2{
+	font-family: "Roboto Bold" sans-serif;
+	font-size:31.48px;
+	line-height:normal;
+	color:#000000;
+	font-weight:bold;
+}
