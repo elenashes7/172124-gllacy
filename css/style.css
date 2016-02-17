@@ -116,8 +116,54 @@ body {
 	padding-top:25px;
 }
 
+.clearfix::after {
+  content: "";
 
-
+  display: table;
+  clear: both;
+}
+.news-mailng{
+width: 860px;
+margin:0 auto;	
+}
+.news{
+	float:left;
+	width: 420px;
+	min-height: 220px;
+	background-image:url('../img/Клубничный фон.png');
+	
+}
+.news-text{
+	font-family: "Roboto Medium" sans-serif;
+	font-size:16px;
+	line-height:normal;
+	color:#353535;
+	font-weight:medium;
+	padding-left: 20px; 
+}
+.news-10-sposobov{
+	font-family: "Roboto Bold" sans-serif;
+	font-size:24px;
+	line-height:normal;
+	color:#353535;
+	font-weight:bold;
+	/*text-align: left; тогда padding только к первой строке*/
+}
+.mailing{
+	float:right;
+	width: 420px;
+	min-height: 220px;
+	background-image:url('../img/Подложка.png');
+	margin-right:20px;
+}
+.mailng-text{
+	font-family: "Roboto Regular" sans-serif;
+	font-size:16px;
+	line-height:normal;
+	color:#353535;
+	font-weight:bold;
+	padding:10px 20px;
+}
 
 
 
