@@ -2,20 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <link href="css/style.css" rel="stylesheet">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
   <header class="main-header">
     <div class="container clearfix">
     	<nav class="main-navigation">
-        <ul>
-          <li>
+        <ul class="main-menu">
+          <li >
             <div class="gllacy-logo" >
-    		<img src="img/logo.svg" alt="Gllacy" width="154" height="64">
-    	</div>
-          <li>
-            <a href="#">Каталог</a>
+          		<img src="img/logo.svg" alt="Gllacy" width="154" height="64">
+            </div>
+          <li >
+            <a class="active" href="#">Каталог</a>
             <ul class="catalog-nav">
                   <li> 
                     <a href="#"> Новинки </a>
@@ -34,28 +35,26 @@
                   </li>
                 </ul>
           </li>
-          <li>
+          <li >
             <a href="#">Доставка и оплата</a>
           </li>
-          <li>
+          <li >
             <a href="#">О Компании</a>
           </li>
         </ul>
       </nav>
         <div class="user-block">
         	<div class="search">
-          		<a class="search-image" href="#">
-          			<img src="http://placehold.it/150x100">
-          		</a>
+          		<a class="search-image" href="#"></a>
           	</div>
         	<div class="enter">
         		<a class="enter-image" href="#">
-        			<img src="http://placehold.it/150x100">Вход
+        			Вход
         		</a>
         	</div>
         	<div class="basket">
         		<a class="basket-image" href="#">
-        			<img src="http://placehold.it/150x100">Пусто</a>
+        			Пусто</a>
         	</div>
           <div class="schedule-phone">
             <p class="schedule-text"> с 10 до 20, ежедневно</p>
@@ -64,28 +63,32 @@
     </div>
   </header>
   <main class="container">
-  	<div class="slider">
-      <div class="slide-1">
-        <div class="slide-title"></div>
+    <input type="radio" id="btn-1" name="toggle" checked>
+    <input type="radio" id="btn-2" name="toggle">
+    <input type="radio" id="btn-3" name="toggle">
+    <div class="site-wrapper">
+      <div class="content-wrapper">
+        <div class="slider">
+          <div class="slide" id="slide1">
+            <div class="slide-title"> Крем-брюле и пломбир с малиновым джемом </div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide2" >
+            <div class="slide-title"> Шоколадный пломбир и лимонный сорбет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slide" id="slide3">
+            <div class="slide-title"> Пломбир с помадкой и клубничный щербет</div>
+            <a class="slide-btn" href="#">Давайте оба!</a>
+          </div>
+          <div class="slider-controls">
+            <label for="btn-1"></label>
+            <label for="btn-2"></label>
+            <label for="btn-3"></label>
+          </div>
+        </div>
       </div>
-      <div class="slide-2">
-        <div class="slide-title"></div>
-      </div>
-      <div class="slide-3">
-        <div class="slide-title"></div>
-      </div>
-
-  		<div class="text-1">Крем-брюле и пломбир с малиновым джемом
-  		</div>
-  		<div class="text-2">
-  			<a class="btn-2" href="#"> Давайте оба!</a>
-  		</div>
-  		<div class="slide-pagination">
-  			<a class="btn" href="#">Slide-1</a>
-  			<a class="btn" href="#">Slide-2</a>
-  			<a class="btn" href="#">Slide-3</a>
-  		</div>
-  	</div>
+    </div>
 
 
   	<div class="promo clearfix">
@@ -106,62 +109,64 @@
   	</div>
 
 
-  	<div class="ice-cream-list">
-      <div class="ice-cream">
-        <div class="ice-cream-img">
-          <a href="#"> <img src="img/1.png" alt="Апельсиновое" width="200" height="200"> </a>
+      <div class="ice-cream-list">
+            <div class="ice-cream">
+              <div class="ice-cream-img">
+                <a href="#"> <img src="img/1.png" alt="Апельсиновое" width="200" height="200"> </a>
+              </div>
+              <a href="#" class="hit"></a>
+              <div class="ice-cream-price"><span class="price-rub">310</span> /кг </div>
+          <p class="hit-text"> Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </div>
-          <a href="#">Хит</a>
-        <div class="ice-cream-price"><span class="price-rub">310</span> /кг </div>
-  			<p class="hit-text"> Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
-  		</div>
-  		<div class="ice-cream">
-        <div class="ice-cream-img">
-          <a href="#"><img src="img/2.png" alt="Шоколадное" width="200" height="200"></a></div>
-          <div class="hit"><a href="#">Хит</a>
-        <div class="ice-cream-price"><span class="price-rub">380</span> /кг </div>
-  			
-  			<p class="hit-text"> Сливочно-кофейное с кусочками шоколада</p>
-  		</div>
-  		<div class="ice-cream">
-  			<div class="ice-cream-img">
-          <a href="#"><img src="img/3.png" alt="Сливочно-клубничное" width="200" height="200"></a></div>
-          <div class="hit"><a href="#">Хит</a>
-        <div class="ice-cream-price"><span class="price-rub">355</span> /кг </div>
-  			<p class="hit-text"> Сливочно-клубничное с присыпкой из белого шоколада</p>
-  		</div>
-  		<div class="ice-cream">
-  			<div class="ice-cream-img">
-          <a href="#"><img src="img/4.png" alt="Крем-брюле" width="200" height="200"></a></div>
-          <div class="hit"><a href="#">Хит</a>
-        <div class="ice-cream-price"><span class="price-rub">415</span> /кг </div>
-  			<p class="hit-text"> Сливочное крем-брюле с карамельной подливкой</p>
-  		</div>
-  	</div>
+        <div class="ice-cream">
+              <div class="ice-cream-img">
+                <a href="#"><img src="img/2.png" alt="Шоколадное" width="200" height="200"></a>
+              </div>
+              <a href="#" class="hit"></a>
+              <div class="ice-cream-price"><span class="price-rub">380</span> /кг </div>
+          
+          <p class="hit-text"> Сливочно-кофейное с кусочками шоколада</p>
+        </div>
+        <div class="ice-cream">
+          <div class="ice-cream-img">
+                <a href="#"><img src="img/3.png" alt="Сливочно-клубничное" width="200" height="200"></a>
+              </div>
+              <a href="#" class="hit"></a>
+              <div class="ice-cream-price"><span class="price-rub">355</span> /кг </div>
+          <p class="hit-text"> Сливочно-клубничное с присыпкой из белого шоколада</p>
+        </div>
+        <div class="ice-cream">
+          <div class="ice-cream-img">
+                <a href="#"><img src="img/4.png" alt="Крем-брюле" width="200" height="200"></a></div>
+              <a href="#" class="hit"></a>
+              <div class="ice-cream-price"><span class="price-rub">415</span> /кг </div>
+          <p class="hit-text"> Сливочное крем-брюле с карамельной подливкой</p>
+        </div>
+      </div>
 
 
   	<div class="info">
   		<h2 class="info-title"> Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
       <div class="info-list">
-  		<div class="info-item icon-icecream">
-  			<img src="img/Мороженко.svg" alt="Мороженко" width="48" height="48">
-  			<p class="info-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-  		</div>
-  		<div class="info-item  info-leafe">
-  			<img src="img/Листик.svg" alt="Листик" width="48" height="48">
-  			<p class="info-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
-  		</div>
-  		<div class="info-item  icon-cow">
-  			<img src="img/Корова.svg" alt="Корова" width="48" height="48">
-  			<p class="info-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-  		</div>
+    		<div class="info-item icon-icecream">
+    			<img src="img/Мороженко.svg" alt="Мороженко" width="48" height="48">
+    			<p class="info-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
+    		</div>
+    		<div class="info-item  info-leafe">
+    			<img src="img/Листик.svg" alt="Листик" width="48" height="48">
+    			<p class="info-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
+    		</div>
+    		<div class="info-item  icon-cow">
+    			<img src="img/Корова.svg" alt="Корова" width="48" height="48">
+    			<p class="info-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
+    		</div>
 
 
-  		<div class="info-item info-temperature">
-  			<img src="img/Градусник.svg" alt="Градусник" width="48" height="48">
-  			<p class="info-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
-  		</div>
-  	</div>
+    		<div class="info-item info-temperature">
+    			<img src="img/Градусник.svg" alt="Градусник" width="48" height="48">
+    			<p class="info-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
+    		</div>
+      </div>
   </div>
 
   <div class="news-mailng">
@@ -198,7 +203,7 @@
 
 
   <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="footer-social">
           <a class="social-btn social-btn-twi" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
@@ -213,7 +218,7 @@
           <a class="f-btn" href="#">Экологические стандарты</a>
         </section>
         <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" alt="html academy"></a>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/лого.svg" alt="html academy"></a>
           <p>Сделано в  <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>© 2016</p>
         </section>
       </div>
