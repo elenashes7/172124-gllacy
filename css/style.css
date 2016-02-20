@@ -626,6 +626,8 @@ bottom:30px;
 left:25px;
   }
 
+/*FOOTER*/
+
 .main-footer {
   margin: 20px 20px;
 
@@ -636,17 +638,68 @@ left:25px;
 .footer-social{
 	float:left;
 	width: 190px;
+
 }
+
+.social-btn-twi{
+position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /*background: rgba(255,255,255,.2);*/
+  background:  #c2cec7 url("../img/Твитер.svg") no-repeat 50% 50%;
+}
+.social-btn-inst{
+ position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /*background: rgba(255,255,255,.2);*/
+  background:  #c2cec7 url("../img/Инста.svg") no-repeat 50% 50%; 
+}
+.social-btn-fb{
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /*background: rgba(255,255,255,.2);*/
+  background:  #c2cec7 url("../img/ФБ.svg") no-repeat 50% 50%; 
+}
+.social-btn-vk{
+  position: relative;
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  /*background: rgba(255,255,255,.2);*/
+  background:  #c2cec7 url("../img/ВК.svg") no-repeat 50% 50%; 
+}
+
 .footer-contacts{
 	float:left;
 	width: 335px;
+  font-family: "Roboto Regular" sans-serif;
+  font-size: 13px;
+  color:white;
+}
+.footer-contacts a{
+  font-family: "Roboto Regular" sans-serif;
+  font-size: 13px;
+  color:white;
 }
 .footer-copyright{
 	float:right;
 	width: 200px;
+  color:white;
+  font-family: "Roboto Regular" sans-serif;
+  font-size: 12px;
 }
-
-
+.footer-copyright a{
+  color:white;
+}
 /*Каталог*/
 .content{
   width: 860px;
