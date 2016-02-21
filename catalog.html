@@ -48,39 +48,37 @@
             </ul>
           </nav>
         <div class="user-block">
-        	<div class="search">
-          	<a class="search-image" href="#"></a>
-          
-            <form action="#" method="get" name="search-form">
-              <input type="text" name="search" value="Что ищем?">
-            </form>
+          <div class="search">
+            <a class="search-image" href="#"></a>
+              <div class="search-content">
+                <form class="search-form" action="#" method="get">
+                  <input type="text" name="search" value="Что ищем?">
+                </form></div>
+                </div>
+              <div class="enter">
+                <a class="enter-image" href="#">
+                  <span>Вход</span>
+                </a>
+                <div class="enter-content">
+                  <form class="login-form" action="#" methd="post">
+                    <input class="icon-user" type="text" name="login" placeholder="Электронная почта">
+                    <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                    <button class="btn-4" type="submit">Войти</button>
+                    <a class="link1" href="#">Забыли пароль?</a>
+                    <a class="link2" href="#">Новая регистрация</a>
+                  </form>
+                </div>
+              </div>
+              <div class="basket">
+                <a class="basket-image" href="#"><span class="empty">
+                  Пусто</span><span class="2-items"> 2 товара</span></a>
+              </div>
+              <div class="schedule-phone">
+                <p class="schedule-text"> с 10 до 20, ежедневно</p>
+                <p class="phone-text"> 8 812 450-25-25 </p>
+              </div>
+            </div>
           </div>
-        	<div class="enter">
-        		<a class="enter-image" href="#"> Вход </a>
-          <form action="#" method="post" name="enter-form">
-            <input type="text" name="email" value="Электронная почта">
-            <input type="text" name="password" value="Пароль">
-            <input type="submit" value="Войти">
-          </form> 
-          <a class="enter-link" href="#">Забыли пароль?</a>
-          <a class="enter-link" href="#">Новая регистрация</a>
-        	</div>
-        	<div class="basket">
-        		<a class="basket-image" href="#"><span class="empty"> Пусто </span> <span><!--количество товара--></span></a>
-            <form action="#" method="get">
-            <!--как сделать правильную форму?-->
-              <input type="checkbox" name="orange" value="Пломбир с апельсиновым джемом 1,5 кг х 200 руб. 300 руб">
-              <input type="checkbox" name="strawberry" value="Клубничный пломбир с присыпкой из белого шоколада 1,5 кг ч 300 руб. 450 руб.">
-              <p>Итого:750 руб.</p>
-              <input type="submit" name="checkout" value="Оформить заказ">
-            </form>
-          </div>
-        <div class="schedule-phone">
-            <p class="schedule-text"> с 10 до 20, ежедневно</p>
-            <p class="phone-text"> 8 812 450-25-25 </p>
-        </div>
-      </div>
-    </div>
   </header>
   
   <main class="content">
@@ -103,8 +101,16 @@
           </select>
       </fieldset>
       <fieldset class="price-range">
+        <div class="range-controls">
+          <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle-min"></div>
+          <div class="toggle toggle-max"></div>
+
+        </div>
         <legend> Цена: <span class="100-500rub">100 руб. - 500 руб.</span> </legend>
-        <!--Пока не знаю как сделать ползунок-->
+        
       </fieldset>
       <fieldset class="fatness">
         <legend> Жирность: </legend>
@@ -245,14 +251,13 @@
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
         </section>
         <section class="footer-contacts">
-          <img src="http://placehold.it/150x100">
-          <a class="f-btn" href="#">Для поставщиков</a>
+         <a class="f-btn" href="#">Для поставщиков</a>
           <a class="f-btn" href="#">О производстве</a>
           <a class="f-btn" href="#">Наши документы</a>
           <a class="f-btn" href="#">Экологические стандарты</a>
         </section>
         <section class="footer-copyright">
-          <a class="btn" href="https://htmlacademy.ru"><img src="http://placehold.it/150x100" alt="html academy"></a>
+          <a class="btn" href="https://htmlacademy.ru"><img src="img/лого.svg" alt="html academy"></a>
           <p>Сделано в  <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>© 2016</p>
         </section>
       </div>
