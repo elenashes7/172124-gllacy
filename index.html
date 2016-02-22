@@ -27,7 +27,7 @@
                       <a href="#"> Новинки </a>
                     </li>
                     <li> 
-                      <a href="#"> Сливочное </a>
+                      <a href="catalog.html"> Сливочное </a>
                     </li>
                     <li> 
                       <a href="#"> Щербеты </a>
@@ -61,9 +61,9 @@
             			<span>Вход</span>
             		</a>
                 <div class="enter-content">
-                  <form class="login-form" action="#" methd="post">
-                    <input class="icon-user" type="text" name="login" placeholder="Электронная почта">
-                    <input class="icon-password" type="password" name="password" placeholder="Пароль">
+                  <form class="login-form" action="#" method="post">
+                    <input class="icon-user" type="text" name="login" placeholder="Электронная почта" required>
+                    <input class="icon-password" type="password" name="password" placeholder="Пароль" required>
                     <button class="btn-4" type="submit">Войти</button>
                     <a class="link1" href="#">Забыли пароль?</a>
                     <a class="link2" href="#">Новая регистрация</a>
@@ -71,8 +71,14 @@
                 </div>
             	</div>
             	<div class="basket">
-            		<a class="basket-image" href="#"><span class="empty">
-            			Пусто</span><span class="2-items"> 2 товара</span></a>
+            		<a class="basket-image" href="#">
+                <span class="empty">Пусто</span>
+                <span class="items-2">2 товара</span>
+              </a>
+              <div class="basket-content">
+                <p class="basket-text"><span class="x-img"></span><span class="o-img1">_</span> Пломбир с апельсиновым джемом <span class="txt2">1,5 кг х 200 руб. </span><span class="txt3"> 300 руб</span></p>
+                <p class="basket-text2"><span class="x-img"></span><span class="o-img2">_</span> Клубничный пломбир с присыпкой  из белого шоколада <span class="txt2">1,5 кг х 300 руб. </span><span class="txt3"> 450 руб</span></p>   
+              </div>
             	</div>
               <div class="schedule-phone">
                 <p class="schedule-text"> с 10 до 20, ежедневно</p>
@@ -153,24 +159,24 @@
       		<h2 class="info-title"> Магазин Глейси - это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h2>
           <div class="info-list">
         		<div class="info-item icon-icecream">
-        			<img src="img/Мороженко.svg" alt="Мороженко" width="48" height="48">
+        			<img src="img/icecream3.svg" alt="Мороженко" width="48" height="48">
         			<p class="info-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
         		</div>
             <div class="info-item icon-cow">
-              <img src="img/Корова.svg" alt="Корова" width="48" height="48">
+              <img src="img/cow.svg" alt="Корова" width="48" height="48">
               <p class="info-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
             </div>
         		<div class="info-item info-leafe">
-        			<img src="img/Листик.svg" alt="Листик" width="48" height="48">
+        			<img src="img/leaf.svg" alt="Листик" width="48" height="48">
         			<p class="info-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты произведены из натурального, экологически чистого сырья.</p>
         		</div>
         		<div class="info-item info-temperature">
-        			<img src="img/Градусник.svg" alt="Градусник" width="48" height="48">
+        			<img src="img/gradus.svg" alt="Градусник" width="48" height="48">
         			<p class="info-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, которая не дает мороженому растаять в пути и позволяет ему сохранить свой превосходный вкус.</p>
         		</div>
           </div>
         </div>
-        <div class="news-mailng">
+        <div class="news-mailng clearfix">
         	<div class="news">
         		<p class="news-text">Новое в нашем блоге</p>
         		<p> <a class="news-10-sposobov" href="#"> 10 способов сервировки фруктовых щербетов к столу </a></p>
@@ -185,6 +191,8 @@
         </div>
       </div>
       <div class="map">
+
+        <div class="pin-image"></div>
         <div class="container">
           <div class="map-address">
             <p class="address-text-1"> Адрес главного офиса и офлайн магазина:</p>
@@ -194,7 +202,7 @@
             <p class="address-text-1"> (с 10 до 20 ежедневно)</p>
             <a class="address-btn" href="#">Форма обратной связи</a>
             <form  class="name-form" action="#" method="get">
-              <input type="text" name="name" value="Как вас зовут?">
+              <label for="name"><input type="text" id="name" name="name" value="Как вас зовут?"></label>
             </form>
           </div>
         </div>
@@ -208,18 +216,73 @@
             <a class="social-btn social-btn-vk" href="#"></a>
           </section>
           <section class="footer-contacts">
-            <a class="f-btn" href="#">Для поставщиков</a>
+            <a class="f-btn favourite" href="#">Для поставщиков</a>
             <a class="f-btn" href="#">Наши документы</a>
             <a class="f-btn" href="#">О производстве</a>
             <a class="f-btn" href="#">Экологические стандарты</a>
           </section>
           <section class="footer-copyright">
-            <a class="btn" href="https://htmlacademy.ru"><img src="img/лого.svg" alt="html academy"></a>
+            <a class="btn" href="https://htmlacademy.ru"><img src="img/logo2.svg" alt="html academy"></a>
             <p>Сделано в  <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>© 2016</p>
           </section>
         </div>
       </footer>
     </div>
+    <script>
+      var link = document.querySelector(".enter-image");
+
+      
+      var popup = document.querySelector(".enter-content");
+
+      var close = popup.querySelector(".btn-4");
+      var form = popup.querySelector("form");
+
+      var login = popup.querySelector("[name=login]");
+      var password = popup.querySelector("[name=password]");
+
+      var storage = localStorage.getItem("login");
+      
+      link.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("enter-content-show");
+
+          if (storage) {
+          login.value = storage;
+          password.focus();
+        } else {
+          login.focus();
+        }
+
+      });
+        close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("enter-content-show");
+         popup.classList.remove("modal-error");
+      });
+        form.addEventListener("submit", function(event) {
+        event.preventDefault();
+        if (!login.value || !password.value) {
+          event.preventDefault();
+          popup.classList.remove("modal-error");
+          popup.offsetWidth = popup.offsetWidth;
+          console.log("Нужно ввести логин и пароль"); 
+          popup.classList.add("modal-error");
+        } else {
+          localStorage.setItem("login", login.value);
+        }
+      });
+
+        window.addEventListener("keydown", function(event) {
+        if (event.keyCode === 27) {
+          if (popup.classList.contains("enter-content-show")) {
+            popup.classList.remove("enter-content-show");
+             popup.classList.remove("modal-error");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
+
+
 
